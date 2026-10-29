@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10101b">
+  <meta name="description" content="Priya Tambe's developer portfolio showcasing Java, web development skills and projects.">
+
+  <title>Priya Tambe | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="#top" aria-label="Priya Tambe home">
+        <span class="mark">P</span>
+        <span class="logo-text">Priya Tambe<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#learning">Learning</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme" id="theme" type="button"
+        aria-label="Switch to light mode" title="Toggle theme">
+        <span id="themeIcon" aria-hidden="true">☼</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero section -->
+    <section class="wrap hero" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          OPEN TO TECHNICAL OPPORTUNITIES
+        </p>
+
+        <h1>
+          Hi, I’m Priya.<br>
+          I build <em>thoughtful digital experiences.</em>
+        </h1>
+
+        <p class="lede">
+          I’m interested in Java development and web technologies,
+          and I learn best by turning ideas into practical projects.
+          This portfolio brings together my skills, current learning
+          goals, and selected work.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">
+            Explore my projects <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn ghost" href="#contact">Let’s connect</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><i class="meta-icon">⌘</i> Java &amp; Web Development</span>
+          <span><i class="meta-icon">⌁</i> Learning by building</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative technology illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="orb">
+          <span>P<span class="orb-dot">.</span></span>
+        </div>
+
+        <span class="float f1">JAVA</span>
+        <span class="float f2">HTML</span>
+        <span class="float f3">CSS</span>
+        <span class="float f4">JS</span>
+        <span class="float f5">MySQL</span>
+
+        <div class="mini-card">
+          <span class="mini-check">✓</span>
+          <span>
+            <b>Build. Learn. Improve.</b>
+            <small>One project at a time</small>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="wrap section" id="about">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A LITTLE INTRODUCTION</p>
+          <h2 class="sec">
+            Curious by nature.<br>
+            <em>Practical by design.</em>
+          </h2>
+        </div>
+
+        <p class="section-copy">
+          I enjoy understanding how things work, solving coding
+          problems, and improving an application step by step —
+          from the interface to the logic behind it.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card about-main">
+          <span class="card-kicker">01 / ABOUT ME</span>
+          <h3>Building a strong foundation in software development.</h3>
+          <p>
+            My focus is on Java, web development, and database
+            fundamentals. Through personal and academic projects,
+            I practise writing code, debugging issues, and creating
+            useful, user-friendly applications.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <span class="about-icon">⌘</span>
+          <h3>What I enjoy</h3>
+          <p>
+            Bringing a project to life, learning new tools, and
+            making interfaces clearer and easier to use.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <span class="about-icon">↗</span>
+          <h3>What’s next</h3>
+          <p>
+            Strengthening Java and SQL fundamentals while growing
+            my experience with real-world development workflows.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="wrap section" id="skills">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2 class="sec">Skills &amp; strengths</h2>
+        </div>
+
+        <p class="section-copy">
+          A self-assessment snapshot. Use the filters and sort
+          options to explore the skills I’m developing.
+        </p>
+      </div>
+
+      <div class="controls">
+        <div class="tabs" id="tabs" role="group"
+          aria-label="Filter skills by category">
+          <button data-filter="all" aria-pressed="true">All skills</button>
+          <button data-filter="frontend" aria-pressed="false">Front-end</button>
+          <button data-filter="tools" aria-pressed="false">Tools</button>
+          <button data-filter="soft" aria-pressed="false">Strengths</button>
+        </div>
+
+        <div class="right">
+          <label class="sr" for="sort">Sort skills</label>
+
+          <select id="sort">
+            <option value="default">Default order</option>
+            <option value="high">Highest first</option>
+            <option value="low">Lowest first</option>
+            <option value="az">A to Z</option>
+          </select>
+
+          <button class="btn ghost small" id="replay" type="button">
+            ↻ Replay bars
+          </button>
+        </div>
+      </div>
+
+      <!-- Skills summary -->
+      <div class="summary" id="summary">
+        <div class="ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8b70ff"/>
+                <stop offset="1" stop-color="#ff6eaa"/>
+              </linearGradient>
+            </defs>
+
+            <circle class="rt" cx="60" cy="60" r="52"/>
+            <circle class="rp" id="ringArc" cx="60" cy="60" r="52"/>
+          </svg>
+
+          <div class="ring-num">
+            <b id="avgNum">0%</b>
+            <span>average score</span>
+          </div>
+        </div>
+
+        <dl class="facts">
+          <div>
+            <dt>Skills shown</dt>
+            <dd id="fCount">—</dd>
+          </div>
+          <div>
+            <dt>Strongest area</dt>
+            <dd id="fTop">—</dd>
+          </div>
+          <div>
+            <dt>Self-assessed level</dt>
+            <dd id="fLevel">—</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="skills" id="skillList">
+        <article class="skill" data-cat="frontend" data-percent="70">
+          <div class="top">
+            <h3 class="name">HTML5</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="frontend" data-percent="65">
+          <div class="top">
+            <h3 class="name">CSS3</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="frontend" data-percent="45">
+          <div class="top">
+            <h3 class="name">JavaScript</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="frontend" data-percent="65">
+          <div class="top">
+            <h3 class="name">Responsive Design</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="tools" data-percent="50">
+          <div class="top">
+            <h3 class="name">Git &amp; GitHub</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="tools" data-percent="75">
+          <div class="top">
+            <h3 class="name">VS Code &amp; Eclipse</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="tools" data-percent="55">
+          <div class="top">
+            <h3 class="name">MySQL</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="soft" data-percent="75">
+          <div class="top">
+            <h3 class="name">Problem Solving</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+
+        <article class="skill" data-cat="soft" data-percent="80">
+          <div class="top">
+            <h3 class="name">Team Collaboration</h3>
+            <div class="meta"><span class="lvl"></span><span class="pct">0%</span></div>
+          </div>
+          <div class="track"><div class="fill"></div></div>
+        </article>
+      </div>
+
+    
+    </section>
+
+    <!-- Learning section -->
+    <section class="wrap section" id="learning">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT I’M EXPLORING</p>
+          <h2 class="sec">Currently learning</h2>
+        </div>
+
+        <p class="section-copy">
+          Keeping a learning mindset and building skills through practice.
+        </p>
+      </div>
+
+      <div class="learning-grid">
+        <article class="learn-card">
+          <span class="learn-number">01</span>
+          <div>
+            <h3>Core Java &amp; JDBC</h3>
+            <p>
+              Strengthening object-oriented programming, exception
+              handling, collections, and database connectivity.
+            </p>
+          </div>
+          <span class="learn-tag">Backend</span>
+        </article>
+
+        <article class="learn-card">
+          <span class="learn-number">02</span>
+          <div>
+            <h3>Servlets &amp; JSP</h3>
+            <p>
+              Practising server-side web development and understanding
+              request-to-database workflows.
+            </p>
+          </div>
+          <span class="learn-tag">Java web</span>
+        </article>
+
+        <article class="learn-card">
+          <span class="learn-number">03</span>
+          <div>
+            <h3>JavaScript &amp; UI polish</h3>
+            <p>
+              Improving DOM manipulation, responsive layouts,
+              validation, and accessible interactions.
+            </p>
+          </div>
+          <span class="learn-tag">Frontend</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="wrap section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 class="sec">Projects in practice</h2>
+        </div>
+
+        <p class="section-copy">
+          Projects help me connect concepts with practical implementation.
+          Explore the repositories and live demos below.
+        </p>
+      </div>
+
+      <div class="projects" id="projectGrid"></div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="wrap section" id="contact">
+      <div class="contact-panel">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2 class="sec">Let’s build something useful.</h2>
+          <p class="section-copy">
+            I’m interested in internships, entry-level technical roles,
+            and opportunities to learn with a development team.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn" href="https://github.com/priyatambe2004"
+             target="_blank" rel="noopener noreferrer">
+            GitHub profile ↗
+          </a>
+
+          <a class="btn ghost" href="mailto:YOUR_EMAIL@example.com">
+            Email me
+          </a>
+        </div>
+
+        <p class="contact-note">
+          Replace the sample email address with your professional email.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="logo" href="#top">
+        <span class="mark">P</span>
+        <span class="logo-text">Priya Tambe<span class="logo-dot">.</span></span>
+      </a>
+
+      <span>
+        © <span id="year">2026</span> Priya Tambe ·
+        Built with HTML, CSS &amp; JavaScript
+      </span>
+
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
